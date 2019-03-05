@@ -2,7 +2,7 @@
 
 It is a question-answering system for the field of vehicle maintenance, using Spring-SpringMVC-Mybatis backend framework, Bootstrap front-end framework and Mysql structured database.
 
-### The processing flow of the core business of the system:
+### The core business of the system:
 
 1. A user inputs a question about vehicle maintenance in natural language;
 2. The system reprocess the question and segment it into several words;
@@ -17,7 +17,7 @@ It is a question-answering system for the field of vehicle maintenance, using Sp
 4. extract 5 phrases as keywords from each content and save them as an attribute value;
 5. attributes in the database: id,url,title,keywords,content.
 
-### The models and tools used:
+### Models and tools used:
 1. segmentation--HMM,CRF; tool--ansj
 2. get knowledge from websites--WebCollectCrawler; tool--WebCollectCrawler
 3. keyword extraction--TFIDF; tool--ansj
