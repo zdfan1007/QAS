@@ -1,20 +1,35 @@
-## Welcome to GitHub Pages
+## A project written in 2017
 
-You can use the [editor on GitHub](https://github.com/zdfan1007/QAS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+It is a question-answering system for the field of vehicle maintenance, using Spring-SpringMVC-Mybatis backend framework, Bootstrap front-end framework and Mysql structured database.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### The processing flow of the core business of the system:
 
-### Markdown
+1. A user inputs a question about vehicle maintenance in natural language;
+2. The system reprocess the question and segment it into several words;
+3. The similarity is calculated between these words and the phrases in the database;
+4. The system returns the three answers with the highest similarity value to the user.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### The processing of the knowledge database:
 
-```markdown
-Syntax highlighted code block
+1. search domain knowledge on websites;
+2. collect and save url,title,content into database;
+3. segment each content into phrases;
+4. extract 5 phrases as keywords from each content and save them as an attribute value;
+5. attributes in the database: id,url,title,keywords,content.
 
-# Header 1
-## Header 2
-### Header 3
+### The models and tools used:
+1. segmentation--HMM,CRF; tool--ansj
+2. get knowledge from websites--WebCollectCrawler; tool--WebCollectCrawler
+3. keyword extraction--TFIDF; tool--ansj
+4. similarity calculation--word2vec; tool--word2vec
 
+### About programming and implementation:
+
+For professional and experienced programmers, my code is confusing, sometimes, even I myself cannot understand what I was writing. Actually I don't have so much experience in programming, and it was my first time completely and systematically developing a system on my own. You need to configure software development environment, get familiar with the development language, understand the development framework and development process. You also need to apply different model codes to your own system in order to support the business process.
+
+Now I am reviewing this project and realize that my programming ability is quite immature. However, it was my precious experience because I  have learned a lot from this project even if I was weak at programming. I think I will learn harder to keep up with the ever-changing computer language, and I guess I will learn faster and more easily on the basis of this project.
+
+```
 - Bulleted
 - List
 
@@ -24,7 +39,6 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
