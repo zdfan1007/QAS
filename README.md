@@ -1,11 +1,11 @@
 ## A project written in 2017
 
-It is a question-answering system for the field of vehicle maintenance, using Spring-SpringMVC-Mybatis backend framework, Bootstrap front-end framework and Mysql structured database.
+It is a question-answering system for the field of vehicle maintenance, using Spring-SpringMVC-Mybatis back-end framework, Bootstrap front-end framework and Mysql structured database.
 
 ### The core business of the system:
 
 1. A user inputs a question about vehicle maintenance in natural language;
-2. The system reprocess the question and segment it into several words;
+2. The system reprocesses the question and segments it into several words;
 3. The similarity is calculated between these words and the phrases in the database;
 4. The system returns the three answers with the highest similarity value to the user.
 
@@ -18,16 +18,16 @@ It is a question-answering system for the field of vehicle maintenance, using Sp
 5. attributes in the database: id,url,title,keywords,content.
 
 ### Models and tools used:
-1. segmentation--HMM,CRF; tool--ansj
-2. get knowledge from websites--WebCollectCrawler; tool--WebCollectCrawler
+1. segmentation--CRF; tool--ansj
+2. knowledge aquisition from websites--WebCollectCrawler; tool--WebCollectCrawler
 3. keyword extraction--TFIDF; tool--ansj
 4. similarity calculation--word2vec; tool--word2vec
 
 ### About programming and implementation:
 
-For professional and experienced programmers, my code is confusing, sometimes, even I myself cannot understand what I was writing. Actually I don't have so much experience in programming, and it was my first time completely and systematically developing a system on my own. You need to configure software development environment, get familiar with the development language, understand the development framework and development process. You also need to apply different model codes to your own system in order to support the business process.
+For professional and experienced programmers, my code may be confusing, sometimes, even I myself cannot understand what I was writing. Actually I don't have so much experience in programming, and it was my first time completely and systematically developing a system on my own. You need to configure software development environment, get familiar with the development language, understand the development framework and development process. You also need to apply different models to your own system in order to support the business process.
 
-Now I am reviewing this project and realize that my programming ability is quite immature. However, it was my precious experience because I  have learned a lot from this project even if I was weak at programming. I think I will learn harder to keep up with the ever-changing computer language, and I guess I will learn faster and more easily on the basis of this project.
+Now I am reviewing this project, and I realize that my programming ability is quite immature. However, it was my precious experience because I learned a lot from this project even if I was weak at programming. I think I will learn harder to keep up with the ever-changing computer language, and I guess I will learn faster and more easily on the basis of this project.
 
 ```
 - Bulleted
