@@ -23,11 +23,6 @@ It is a question-answering system for the field of vehicle maintenance, using Sp
 3. keyword extraction--TFIDF; tool--ansj
 4. similarity calculation--word2vec; tool--word2vec
 
-### About programming and implementation:
-
-For professional and experienced programmers, my code may be confusing, sometimes, even I myself cannot understand what I was writing. Actually I don't have so much experience in programming, and it was my first time completely and systematically developing a system on my own. You need to configure software development environment, get familiar with the development language, understand the development framework and development process. You also need to apply different models to your own system in order to support the business process.
-
-Now I am reviewing this project, and I realize that my programming ability is quite immature. However, it was my precious experience because I learned a lot from this project even if I was weak at programming. I think I will learn harder to keep up with the ever-changing computer language, and I guess I will learn faster and more easily on the basis of this project.
 
 ```
 - Bulleted
